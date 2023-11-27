@@ -1,0 +1,42 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f0;
+  background-image: url('images.jpg'); /* Sua imagem de fundo natalina */
+  background-size: contain; /* Mantém a imagem totalmente visível */
+  background-repeat: no-repeat; /* Evita repetição da imagem */
+  background-position: center;
+  background-size: 290%; /* Centraliza a imagem */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  color: #003366;
+}
+
+.container {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  width: 80%;
+  max-width: 500px;
+}
+
+h1 {
+  color: #d32f2f;
+}
+
+p {
+  font-size: 18px;
+  color: #005b96;
+  margin-top: 20px;
+}
+
+#secretFriend {
+  font-weight: bold;
+  font-size: 24px;
+  color: #008000;
+  margin-top: 30px;
+}
