@@ -7,7 +7,8 @@ document.addEventListener("DOMContentLoaded", function() {
     '7297db81': 'Daniel',
     'af5f5e0f': 'Socorro',
     'c1fee031': 'Flávio',
-    '3bc51062': 'Alice'
+    '3bc51062': 'Alice',
+    'd42f656d': 'Gabriel'
 };
 
   const params = new URLSearchParams(window.location.search);
