@@ -83,7 +83,7 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 
   viewButton.addEventListener('click', function() {
-    const luizaHash = nameToHash[normalizeName('Luiza')];
+    const luizaHash = nameToHash[normalizeName('Maria Luisa')];
     const marisaHash = nameToHash[normalizeName('Marisa')];
 
     const luizaFriendHash = assignments[luizaHash];
