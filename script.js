@@ -31,18 +31,18 @@ document.addEventListener("DOMContentLoaded", function() {
 
   // Hash para Hash (sorteio)
   const assignments = {
-    '13df3cd3': '7297db81',  // Dayse -> Daniel
-    '9c483934': 'd42f656d',  // João -> Gabriel
-    'ec29b76d': 'c1fee031',  // Gustavo -> Flávio
-    'e401c458': '5e6f7a8b',  // Daiana -> Marisa
-    '7297db81': 'af5f5e0f',  // Daniel -> Socorro
-    'af5f5e0f': '3bc51062',  // Socorro -> Alice
-    'c1fee031': 'ec29b76d',  // Flávio -> Gustavo
-    '3bc51062': '1a2b3c4d',  // Alice -> Luiza
-    'd42f656d': '13df3cd3',  // Gabriel -> Dayse
-    '1a2b3c4d': '9c483934',  // Luiza -> João
-    '5e6f7a8b': 'e401c458'   // Marisa -> Daiana
-  };
+    '13df3cd3': '1a2b3c4d',  
+    '9c483934': 'ec29b76d',  
+    'ec29b76d': '13df3cd3',  
+    'e401c458': '3bc51062',  
+    '7297db81': 'c1fee031',  
+    'af5f5e0f': '5e6f7a8b',  
+    'c1fee031': 'e401c458',  
+    '3bc51062': '7297db81',  
+    'd42f656d': 'af5f5e0f',  
+    '1a2b3c4d': 'd42f656d',  
+    '5e6f7a8b': '9c483934'   
+};
 
   const checkButton = document.getElementById('checkButton');
   const nameInput = document.getElementById('nameInput');
