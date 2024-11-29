@@ -53,8 +53,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
   checkButton.addEventListener('click', function() {
     const name = nameInput.value.trim();
+    // Teste aqi
     const normalizedInputName = normalizeName(name);
-
+    // Teste aqi
     // Limpa conteúdos anteriores
     secretFriendParagraph.innerText = '';
     additionalContent.style.display = 'none';
@@ -81,9 +82,9 @@ document.addEventListener("DOMContentLoaded", function() {
       secretFriendParagraph.innerText = 'Nome não encontrado.';
     }
   });
-
+  // Teste aqi
   viewButton.addEventListener('click', function() {
-    const luizaHash = nameToHash[normalizeName('Maria Luisa')];
+    const luizaHash = nameToHash[normalizeName('Maria Luisa')]; // Teste aqi
     const marisaHash = nameToHash[normalizeName('Marisa')];
 
     const luizaFriendHash = assignments[luizaHash];
@@ -99,3 +100,5 @@ document.addEventListener("DOMContentLoaded", function() {
     return name.replace(/\b\w/g, c => c.toUpperCase());
   }
 });
+
+// Rebuild do projeto 
