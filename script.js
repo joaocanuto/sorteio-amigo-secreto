@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
     'c1fee031': 'Flávio',
     '3bc51062': 'Alice',
     'd42f656d': 'Gabriel',
-    '1a2b3c4d': 'Luiza',
+    '1a2b3c4d': 'Luísa',
     '5e6f7a8b': 'Marisa'
   };
 
@@ -38,9 +38,9 @@ document.addEventListener("DOMContentLoaded", function() {
     '7297db81': 'af5f5e0f',  // Daniel -> Socorro
     'af5f5e0f': '3bc51062',  // Socorro -> Alice
     'c1fee031': 'ec29b76d',  // Flávio -> Gustavo
-    '3bc51062': '1a2b3c4d',  // Alice -> Luiza
+    '3bc51062': '1a2b3c4d',  // Alice -> Luisa
     'd42f656d': '13df3cd3',  // Gabriel -> Dayse
-    '1a2b3c4d': '9c483934',  // Luiza -> João
+    '1a2b3c4d': '9c483934',  // Luisa -> João
     '5e6f7a8b': 'e401c458'   // Marisa -> Daiana
   };
 
@@ -48,8 +48,8 @@ document.addEventListener("DOMContentLoaded", function() {
   const nameInput = document.getElementById('nameInput');
   const secretFriendParagraph = document.getElementById('secretFriend');
   const additionalContent = document.getElementById('additionalContent');
-  const viewButton = document.getElementById('viewLuizaMarisaButton');
-  const luizaMarisaFriendsParagraph = document.getElementById('luizaMarisaFriends');
+  const viewButton = document.getElementById('viewLuisaMarisaButton');
+  const luisaMarisaFriendsParagraph = document.getElementById('luisaMarisaFriends');
 
   checkButton.addEventListener('click', function() {
     const name = nameInput.value.trim();
@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // Limpa conteúdos anteriores
     secretFriendParagraph.innerText = '';
     additionalContent.style.display = 'none';
-    luizaMarisaFriendsParagraph.innerText = '';
+    luisaMarisaFriendsParagraph.innerText = '';
 
     if (normalizedInputName && nameToHash[normalizedInputName]) {
       const userHash = nameToHash[normalizedInputName];
@@ -83,16 +83,16 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 
   viewButton.addEventListener('click', function() {
-    const luizaHash = nameToHash[normalizeName('Luiza')];
+    const luisaHash = nameToHash[normalizeName('Luisa')];
     const marisaHash = nameToHash[normalizeName('Marisa')];
 
-    const luizaFriendHash = assignments[luizaHash];
+    const luisaFriendHash = assignments[luisaHash];
     const marisaFriendHash = assignments[marisaHash];
 
-    const luizaFriendName = hashToName[luizaFriendHash];
+    const luisaFriendName = hashToName[luisaFriendHash];
     const marisaFriendName = hashToName[marisaFriendHash];
 
-    luizaMarisaFriendsParagraph.innerText = `Amigo secreto da Luiza: ${luizaFriendName}\nAmigo secreto da Marisa: ${marisaFriendName}`;
+    luisaMarisaFriendsParagraph.innerText = `Amigo secreto da Luisa: ${luisaFriendName}\nAmigo secreto da Marisa: ${marisaFriendName}`;
   });
 
   function capitalizeName(name) {
