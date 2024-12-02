@@ -68,12 +68,12 @@ document.addEventListener("DOMContentLoaded", function() {
 
       if (assignedName) {
         const originalName = hashToName[userHash];
-        secretFriendParagraph.innerText = `Parabéns ${originalName}! Seu amigo secreto é ${assignedName}.`;
+        // secretFriendParagraph.innerText = `Parabéns ${originalName}! Seu amigo secreto é ${assignedName}.`;
 
         // Verifica se o nome é Daniel (normalizado)
         const normalizedDaniel = normalizeName('Daniel');
         if (normalizedInputName === normalizedDaniel) {
-          additionalContent.style.display = 'block';
+          // additionalContent.style.display = 'block';
         }
       } else {
         secretFriendParagraph.innerText = 'Amigo secreto não encontrado.';
@@ -93,7 +93,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const luizaFriendName = hashToName[luizaFriendHash];
     const marisaFriendName = hashToName[marisaFriendHash];
 
-    luizaMarisaFriendsParagraph.innerText = `Amigo secreto da Maria Luísa: ${luizaFriendName}\nAmigo secreto da Marisa: ${marisaFriendName}`;
+    // luizaMarisaFriendsParagraph.innerText = `Amigo secreto da Maria Luísa: ${luizaFriendName}\nAmigo secreto da Marisa: ${marisaFriendName}`;
   });
 
   function capitalizeName(name) {
