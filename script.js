@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", function() {
       if (assignedName) {
         const originalName = hashToName[userHash];
         if(originalName === "Gustavo"){
-          secretFriendParagraph.innerText = `Parabéns ${originalName}! Seu amigo secreto é ${assignedName}.`;
+          // secretFriendParagraph.innerText = `Parabéns ${originalName}! Seu amigo secreto é ${assignedName}.`;
 
         }
 
