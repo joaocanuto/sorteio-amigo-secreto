@@ -68,7 +68,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
       if (assignedName) {
         const originalName = hashToName[userHash];
-        // secretFriendParagraph.innerText = `Parabéns ${originalName}! Seu amigo secreto é ${assignedName}.`;
+        if(originalName === "Gustavo"){
+          secretFriendParagraph.innerText = `Parabéns ${originalName}! Seu amigo secreto é ${assignedName}.`;
+
+        }
 
         // Verifica se o nome é Daniel (normalizado)
         const normalizedDaniel = normalizeName('Daniel');
